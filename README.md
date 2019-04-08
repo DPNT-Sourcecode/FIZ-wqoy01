@@ -17,10 +17,10 @@ Simply `x + y`
 ## hello
 
 **R1:** *The requirement for this round is to say hello to the world.*
-Literally just that. Method `hello(friend_name)` is being expected to "Hello, World!" regardless of the argument supplied. I think the test is wrong...
+Literally just that. Method `hello(friend_name)` is being expected to "Hello, World!" regardless of the argument supplied. To be fair,  requirements do say `param[0] = a String. Ignore for now.`
 
 **R2:** *Example: if name of friend is "John" than return "Hello, John!"*
-
+OK, I jumped the gun before solution. Now we care about the value of `friend_name`
 
 
 ## fizz_buzz
