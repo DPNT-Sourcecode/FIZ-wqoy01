@@ -25,8 +25,11 @@ class ClientTest < Minitest::Test
     # Correct the following test to account for R3
     # assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33), 'Write "fizz deluxe" if number is both fizz and deluxe'
     assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(66), 'Write "fizz deluxe" if number is both fizz and deluxe'
-    
-    assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55), 'Write "buzz deluxe" if number is both buzz and deluxe'
+
+    # Due to R4, 'buzz deluxe' is impossible, it will always be 'buzz fake deluxe' because
+    # there is no valid number that has all the same digits that is not odd
+
+    # assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55), 'Write "buzz deluxe" if number is both buzz and deluxe'
 
     # Correct the following test to account for R3
 
@@ -41,7 +44,3 @@ end
 
 # - If a "deluxe" number is odd, we should call him "fake deluxe"
 # - A number cannot be both "deluxe" and "fake deluxe" at the same time
-
-
-
-
