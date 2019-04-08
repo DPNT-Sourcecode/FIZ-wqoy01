@@ -13,7 +13,8 @@ class ClientTest < Minitest::Test
     # R5: Changed number from 25 to 10, so still valid for buzz
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(10), 'Write "buzz" if number is multiple of 5'
 
-    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(30), 'Write "fizz buzz" if number is multiple of both 3 and 5'
+    # R5: Changed number from 30 to 60, so still valid for 'fizz buzz'
+    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(60), 'Write "fizz buzz" if number is multiple of both 3 and 5'
 
     assert_equal 17, FizzBuzz.new.fizz_buzz(17), 'Write the number if number is not multiple of either 3 or 5'
 
@@ -50,3 +51,4 @@ end
 # - A number is "deluxe" if it fulfils at least one of the following:
 # - is divisible by 3 AND contains a 3
 # - is divisible by 5 AND contains a 5
+
