@@ -11,7 +11,14 @@ class FizzBuzz
     result.empty? ? number : result.join(' ')
   end
 
-  def isDeluxe? (number)
-    
+  def is_deluxe? (number)
+
+  end
+
+  def all_same_digits? (number)
+    ary_of_chars = number.to_s.chars
+
+    arr_of
   end
 end
+
