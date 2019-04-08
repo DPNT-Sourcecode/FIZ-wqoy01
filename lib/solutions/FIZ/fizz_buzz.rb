@@ -21,7 +21,3 @@ class FizzBuzz
     ary_of_chars.all? { |digit| digit == ary_of_chars[0] }
   end
 end
-
-
-
-
