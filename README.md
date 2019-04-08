@@ -25,6 +25,7 @@ OK, I jumped the gun before in R1. Now we do actually care about the value of `f
 
 ## fizz_buzz
 
-R5 criteria for 
-
-## checkout
+R5 criteria for _deluxe_ now as follows:
+- Number divisible by 3 AND contains a 3
+- Number divisible by 5 AND contains a 5
+- If odd, it is _fake_
