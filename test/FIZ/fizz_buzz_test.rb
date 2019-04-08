@@ -28,31 +28,20 @@ class ClientTest < Minitest::Test
 
     assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(50), 'Write "deluxe" if number divisible by 5 AND contains a 5'
 
-    # Revised tests for deluxe to account for R5
-    assert_equal 'fake deluxe', FizzBuzz.new.fizz_buzz(105), 'Write "fake deluxe" if number is deluxe and odd'
-
-
-    # assert_equal 'fake deluxe', FizzBuzz.new.fizz_buzz(11), 'Write "fake deluxe" if number is deluxe and odd'
-
-    # Correct the following test to account for R4
-    # assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33), 'Write "fizz deluxe" if number is both fizz and deluxe'
-    # assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(66), 'Write "fizz deluxe" if number is both fizz and deluxe'
+    # R5 criteria means 'deluxe' (fake or otherwise) must be 'fizz' or 'buzz' or 'fizz buzz'
+    # R5 means there is no longer 'deluxe' on its own
 
     # Due to R4, 'buzz deluxe' is impossible, it will always be 'buzz fake deluxe'
     # there is no multiple of 5 that has all the same digits which is not odd
 
-    # assert_equal 'buzz fake deluxe', FizzBuzz.new.fizz_buzz(55), 'Write "buzz fake deluxe" if number is all of buzz, deluxe and odd'
-    # assert_equal 'fizz fake deluxe', FizzBuzz.new.fizz_buzz(33), 'Write "fizz fake deluxe" if number is all of fizz, deluxe and odd'
-
     # Since 'buzz deluxe' is impossible, so too is 'fizz buzz deluxe'
 
-    # assert_equal 'fizz buzz fake deluxe', FizzBuzz.new.fizz_buzz(555), 'Write "fizz buzz fake deluxe" if number is all of fizz, buzz, deluxe and odd'
+    assert_equal 'fizz fake deluxe', FizzBuzz.new.fizz_buzz(33), 'Write "fizz fake deluxe" if number is all of fizz, deluxe and odd'
+    assert_equal 'buzz fake deluxe', FizzBuzz.new.fizz_buzz(55), 'Write "buzz fake deluxe" if number is all of buzz, deluxe and odd'
+
+    assert_equal 'fizz buzz fake deluxe', FizzBuzz.new.fizz_buzz(555), 'Write "fizz buzz fake deluxe" if number is all of fizz, buzz, deluxe and odd'
   end
 end
-
-# - A number is "deluxe" if it fulfils at least one of the following:
-# - is divisible by 3 AND contains a 3
-# - is divisible by 5 AND contains a 5
 
 
 
