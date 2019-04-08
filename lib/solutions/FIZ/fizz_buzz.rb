@@ -10,4 +10,3 @@ class FizzBuzz
     result.empty? ? number : result.join(' ')
   end
 end
-

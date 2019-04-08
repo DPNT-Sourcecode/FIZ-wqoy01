@@ -20,7 +20,9 @@ class ClientTest < Minitest::Test
 
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(56), 'Write "buzz" if number contains a 5'
 
+    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(44), 'Write "buzz" if number contains a 5'
   end
 end
 
-
+# - A number is considered to be "deluxe" if it is greater than 10 and all the digits are identical
+# - A number can be "fizz", "buzz" and "deluxe" at the same time. If this happens then write "fizz buzz deluxe"
