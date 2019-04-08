@@ -22,6 +22,8 @@ class ClientTest < Minitest::Test
 
     assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(44), 'Write "deluxe" if number greater than 10 with all digits indentical'
 
+    assert_equal 'fake deluxe', FizzBuzz.new.fizz_buzz(11), 'Write "fake deluxe" if number is deluxe and odd'
+
     # Correct the following test to account for R4
     # assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33), 'Write "fizz deluxe" if number is both fizz and deluxe'
     assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(66), 'Write "fizz deluxe" if number is both fizz and deluxe'
@@ -35,7 +37,7 @@ class ClientTest < Minitest::Test
     # Since 'buzz deluxe' is impossible, so too is 'fizz buzz deluxe'
 
     assert_equal 'fizz buzz fake deluxe', FizzBuzz.new.fizz_buzz(555), 'Write "fizz buzz fake deluxe" if number is all of fizz, buzz, deluxe and odd'
-
   end
 end
+
 
