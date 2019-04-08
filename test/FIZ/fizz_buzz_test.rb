@@ -22,7 +22,7 @@ class ClientTest < Minitest::Test
 
     assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(44), 'Write "deluxe" if number greater than 10 with all digits indentical'
 
-    # Correct the following test to account for R3
+    # Correct the following test to account for R4
     # assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33), 'Write "fizz deluxe" if number is both fizz and deluxe'
     assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(66), 'Write "fizz deluxe" if number is both fizz and deluxe'
 
@@ -32,22 +32,10 @@ class ClientTest < Minitest::Test
     assert_equal 'buzz fake deluxe', FizzBuzz.new.fizz_buzz(55), 'Write "buzz fake deluxe" if number is all of buzz, deluxe and odd'
     assert_equal 'fizz fake deluxe', FizzBuzz.new.fizz_buzz(33), 'Write "fizz fake deluxe" if number is all of fizz, deluxe and odd'
 
-        # assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555), 'Write "fizz buzz deluxe" if number is all of fizz, buzz and deluxe'
+    # Since 'buzz deluxe' is impossible, so too is 'fizz buzz deluxe'
 
+    assert_equal 'fizz buzz fake deluxe', FizzBuzz.new.fizz_buzz(555), 'Write "fizz buzz fake deluxe" if number is all of fizz, buzz, deluxe and odd'
 
-    # assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55), 'Write "buzz deluxe" if number is both buzz and deluxe'
-
-    # Correct the following test to account for R3
-
-    # assert_equal 'buzz fake deluxe', FizzBuzz.new.fizz_buzz(55), 'Write "buzz deluxe" if number is both buzz and deluxe'
-
-    # Correct the following test to account for R3
-    # assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555), 'Write "fizz buzz deluxe" if number is all of fizz, buzz and deluxe'
-
-    # assert_equal 'fizz fake deluxe', FizzBuzz.new.fizz_buzz(33), 'Write "fake deluxe" if number is both odd and deluxe'
   end
 end
-
-# - If a "deluxe" number is odd, we should call him "fake deluxe"
-# - A number cannot be both "deluxe" and "fake deluxe" at the same time
 
