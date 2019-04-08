@@ -14,7 +14,7 @@ class ClientTest < Minitest::Test
 
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(30), 'Write "fizz buzz" if number is multiple of both 3 and 5'
 
-    assert_equal 11, FizzBuzz.new.fizz_buzz(11), 'Write the number if number is not multiple of either 3 or 5'
+    assert_equal 17, FizzBuzz.new.fizz_buzz(17), 'Write the number if number is not multiple of either 3 or 5'
 
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(13), 'Write "fizz" if number contains a 3'
 
@@ -26,3 +26,4 @@ end
 
 # - A number is considered to be "deluxe" if it is greater than 10 and all the digits are identical
 # - A number can be "fizz", "buzz" and "deluxe" at the same time. If this happens then write "fizz buzz deluxe"
+
