@@ -28,8 +28,9 @@ class ClientTest < Minitest::Test
 
     assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555), 'Write "fizz buzz deluxe" if number is all of fizz, buzz and deluxe'
 
+    assert_equal 'fake deluxe', FizzBuzz.new.fizz_buzz(555)
   end
 end
 
-# - A number is considered to be "deluxe" if it is greater than 10 and all the digits are identical
-# - A number can be "fizz", "buzz" and "deluxe" at the same time. If this happens then write "fizz buzz deluxe"
+# - If a "deluxe" number is odd, we should call him "fake deluxe"
+# - A number cannot be both "deluxe" and "fake deluxe" at the same time
