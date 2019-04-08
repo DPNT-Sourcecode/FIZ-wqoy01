@@ -10,7 +10,5 @@
 
 ```
 
-## sum
-## hello
 ## fizz_buzz
 ## checkout
