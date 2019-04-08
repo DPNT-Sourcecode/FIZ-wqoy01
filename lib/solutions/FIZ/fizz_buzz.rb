@@ -8,16 +8,17 @@ class FizzBuzz
     result.push('buzz') if (number % 5).zero? || number.to_s.include?('5')
 
     if deluxe?(number)
+      chars = number.to_s.chars
+
       if number.odd?
         result.push('fake deluxe')
       else
-        if (number % 3)
+        if (number % 3).zero? && number.to_s.chars.include?('3')
           
-        elsif 
+        elsif (number % 5).zero? && numbe
           
         end
       end
-       ? result.push('fake deluxe') : result.push('deluxe')
     end
 
     result.empty? ? number : result.join(' ')
@@ -32,4 +33,5 @@ class FizzBuzz
     ary_of_chars.all? { |digit| digit == ary_of_chars[0] }
   end
 end
+
 
