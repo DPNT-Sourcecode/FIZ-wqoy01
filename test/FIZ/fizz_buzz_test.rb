@@ -10,7 +10,8 @@ class ClientTest < Minitest::Test
   def test_fizz_buzz
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(6), 'Write "fizz" if number is multiple of 3'
 
-    assert_equal 'buzz', FizzBuzz.new.fizz_buzz(25), 'Write "buzz" if number is multiple of 5'
+    # R5: Changed number from 25 to 10, so still valid for buzz
+    assert_equal 'buzz', FizzBuzz.new.fizz_buzz(10), 'Write "buzz" if number is multiple of 5'
 
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(30), 'Write "fizz buzz" if number is multiple of both 3 and 5'
 

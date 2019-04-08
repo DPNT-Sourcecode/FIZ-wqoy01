@@ -16,7 +16,7 @@ class FizzBuzz
 
   def deluxe?(number)
     chars = number.to_s.chars
-    (number % 3).zero? && chars.include?('3') || (number % 5).zero? && chars.include?('5')
+    ((number % 3).zero? && chars.include?('3')) || ((number % 5).zero? && chars.include?('5'))
   end
 
   # def deluxe?(number)
@@ -28,3 +28,4 @@ class FizzBuzz
     ary_of_chars.all? { |digit| digit == ary_of_chars[0] }
   end
 end
+
