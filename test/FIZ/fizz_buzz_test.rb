@@ -18,5 +18,8 @@ class ClientTest < Minitest::Test
 
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(13), 'Write "fizz" if number contains a 3'
 
+    assert_equal 'buzz', FizzBuzz.new.fizz_buzz(51), 'Write "buzz" if number contains a 5'
+
   end
 end
+
