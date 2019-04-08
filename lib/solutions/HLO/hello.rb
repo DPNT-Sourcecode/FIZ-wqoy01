@@ -4,6 +4,3 @@ class Hello
     'Hello, ' + friend_name + '!'
   end
 end
-
-
-
