@@ -49,4 +49,3 @@ end
 # - A number is "deluxe" if it fulfils at least one of the following:
 # - is divisible by 3 AND contains a 3
 # - is divisible by 5 AND contains a 5
-
