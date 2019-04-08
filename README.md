@@ -1,4 +1,4 @@
-# Fizz Deluxe
+# Fizz Deluxe: Notes
 
 ```ruby
 # From lib/send_command_to_server.rb:
@@ -25,6 +25,6 @@ OK, I jumped the gun before in R1. Now we do actually care about the value of `f
 
 ## fizz_buzz
 
-A slightly different approach.
+R5 criteria for 
 
 ## checkout
