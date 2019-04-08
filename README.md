@@ -24,4 +24,7 @@ OK, I jumped the gun before in R1. Now we do actually care about the value of `f
 
 
 ## fizz_buzz
+
+A slightly different approach.
+
 ## checkout
