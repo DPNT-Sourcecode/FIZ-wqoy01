@@ -9,6 +9,9 @@
     .with_solution_for('checkout', -> (p) {Checkout.new.checkout(p)})
 
 ```
+## hello
+*The requirement for this round is to say hello to the world.*
+Literally just that. Method `hello(friend_name)` is being expected to "Hello, World!" regardless of the argument supplied.
 
 ## fizz_buzz
 ## checkout
