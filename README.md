@@ -9,9 +9,19 @@
     .with_solution_for('checkout', -> (p) {Checkout.new.checkout(p)})
 
 ```
+
+## sum
+
+Simply `x + y`
+
 ## hello
-*The requirement for this round is to say hello to the world.*
-Literally just that. Method `hello(friend_name)` is being expected to "Hello, World!" regardless of the argument supplied.
+
+**R1:** *The requirement for this round is to say hello to the world.*
+Literally just that. Method `hello(friend_name)` is being expected to "Hello, World!" regardless of the argument supplied. I think the test is wrong...
+
+**R2:** *Example: if name of friend is "John" than return "Hello, John!"*
+
+
 
 ## fizz_buzz
 ## checkout
