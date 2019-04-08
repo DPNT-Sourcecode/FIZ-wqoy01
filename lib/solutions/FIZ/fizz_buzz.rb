@@ -7,6 +7,12 @@ class FizzBuzz
 
     result.push('buzz') if (number % 5).zero? || number.to_s.include?('5')
 
+    result.push('deluxe') if (number > 10)
     result.empty? ? number : result.join(' ')
   end
+
+  def isDeluxe? (number)
+    
+  end
 end
+
