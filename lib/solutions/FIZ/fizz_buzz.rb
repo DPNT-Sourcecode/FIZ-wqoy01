@@ -12,13 +12,13 @@ class FizzBuzz
   end
 
   def is_deluxe? (number)
-
+    (number > 10) && all_same_digits? (number)
   end
 
   def all_same_digits? (number)
     ary_of_chars = number.to_s.chars
-
-    arr_of
+    ary_of_chars.all? {|digit| digit == ary_of_chars[0]}
   end
 end
+
 
