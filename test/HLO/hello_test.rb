@@ -4,12 +4,13 @@ require 'logging'
 
 Logging.logger.root.appenders = Logging.appenders.stdout
 
-require_solution 'SUM'
+require_solution 'HLO'
 
 class ClientTest < Minitest::Test
 
-  def test_sum
-    assert_equal 3, Sum.new.sum(1, 2), 'App should add two numbers'
+  def test_hlo
+
   end
 
 end
+
