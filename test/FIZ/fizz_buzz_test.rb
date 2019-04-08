@@ -20,9 +20,15 @@ class ClientTest < Minitest::Test
 
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(56), 'Write "buzz" if number contains a 5'
 
-    assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(44), 'Write "deluxe" if number greater than 10 with all digits indentical'
+    # assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(44), 'Write "deluxe" if number greater than 10 with all digits indentical'
 
-    assert_equal 'fake deluxe', FizzBuzz.new.fizz_buzz(11), 'Write "fake deluxe" if number is deluxe and odd'
+    assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(36), 'Write "deluxe" if number divisible by 3 AND contains a 3'
+
+    assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(50), 'Write "deluxe" if number divisible by 5 AND contains a 5'
+
+
+
+    # assert_equal 'fake deluxe', FizzBuzz.new.fizz_buzz(11), 'Write "fake deluxe" if number is deluxe and odd'
 
     # Correct the following test to account for R4
     # assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33), 'Write "fizz deluxe" if number is both fizz and deluxe'
@@ -43,3 +49,4 @@ end
 # - A number is "deluxe" if it fulfils at least one of the following:
 # - is divisible by 3 AND contains a 3
 # - is divisible by 5 AND contains a 5
+
