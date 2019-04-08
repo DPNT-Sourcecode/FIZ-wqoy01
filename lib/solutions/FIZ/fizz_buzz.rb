@@ -6,8 +6,9 @@ class FizzBuzz
     result.push('fizz') if (number % 3).zero?
     result.push('buzz') if (number % 5).zero?
 
-    result.join(' ')
+    result.empty? ? number : result.join(' ')
   end
 end
+
 
 
